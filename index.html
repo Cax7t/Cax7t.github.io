@@ -6,9 +6,9 @@
     <script>
         var pts = 0;
         function increment(){
-            pts++;
-            document.getElementById("score").innerHTML("Current points : ${pts}")
-
+            console.log("function called!")
+            pts = pts++;
+            document.getElementById("score").innerHTML(`Current points :` ${pts})
         }
     </script>
 </head>
@@ -16,7 +16,7 @@
 <div id="score">
     Current points : 0
 </div>
-<button>Click me!</button>
+<button onclick="increment()">Click me!</button>
 
 </body>
 </html>
