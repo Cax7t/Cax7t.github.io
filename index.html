@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        var pts = 0;
+        function increment(){
+            pts++;
+            document.getElementById("score").innerHTML("Current points : ${pts}")
+
+        }
+    </script>
 </head>
 <body>
+<div id="score">
+    Current points : 0
+</div>
+<button>Click me!</button>
 
 </body>
 </html>
